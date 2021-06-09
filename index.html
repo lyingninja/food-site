@@ -1,0 +1,213 @@
+<html>
+    <head>
+           <style>
+                 body{
+                 	font-family:cursive ;
+                 }
+                 .navbar{
+                 	position:fixed;
+                     top:0px;
+                     width:100%;
+                     text-align:center;
+                     height:5%;
+                     padding:10% 0%;
+                     font-size:50px;
+                     background-color:white;
+                 }
+                 
+                 	.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+    text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+  font-weight:normal;
+}
+                 
+                 header,h3{
+                 	font-size:60px;
+                     font-family:Lato,Ariel;
+                     text-align:center;
+                     padding:20px;
+                 }
+                 .image{
+                 	height:80%;
+                     width:100%;
+                 }
+                 .body{
+                     margin-left:5%;
+                     width:100%;
+                 }
+                 .card{
+                 	box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+                     margin: 10% 5%;
+                     width:90%;
+                     padding:20px 0;
+                 }
+                 p{
+                 	text-align:center;
+                     margin:20px;
+                 }
+                 .small{
+                 	width:80%;
+                     height:10%;
+                     margin: 10px 10%;
+                     padding:10px;
+                 }
+                 .small-img{
+                 	width:30%;
+                     height:100%;
+                     float:left;
+                 }
+                 .about-img{
+                 	margin:10%;
+                 }
+                 hr{
+                 	border-width:2px;
+                     margin:20% 0;
+                 }
+                 .footer{
+              	   text-align:initial;
+                     font-family:Lato,Ariel;
+                     font-weight:bold;
+                 	margin: 10% 5% !important;
+                 }
+                 .footer-text{
+                 	text-align:center;
+                     padding:5px;
+                     margin-top:20px;
+                     font-size:20px;
+                 }
+                 .footer-txt{
+                     padding:20px;
+                  
+                 }
+           </style>
+           <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+CSS rules to specify families
+font-family: 'Lato', sans-serif;
+           <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "600px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+    </head>
+    <body>
+          <div class="navbar">
+          	<div style="font-size:50px;cursor:pointer;float:left;margin:20px 40px;" onclick="openNav()">&#9776;</div>
+          	<div class="sidenav" id="mySidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:50px;">&times;</a>
+                    <a href="#food">Food</a>
+                    <a href="#about">About</a>
+          	</div>
+              <header>
+              	My Food
+              </header>
+          </div>
+          <div class="body" id="food">
+          	<div class="card">
+          	<img class="image" src="images/sandwich.jpg">
+          	<h3 class="name">The Perfect Sandwich, A Real NYC Classic</h3>
+              <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+              </div>
+              <div class="card">
+              <img class="image" src="images/steak.jpg">
+          	<h3 class="name">Let Me Tell You About This Steak</h3>
+              <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+              </div>
+              <div class="card">
+              <img class="image" src="images/cherries.jpg">
+          	<h3 class="name">Cherries, interrupted</h3>
+              <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+              <p>What else?</p>
+              </div>
+              <div class="card">
+              <img class="image" src="images/wine.jpg">
+          	<h3 class="name">Once Again, Robust Wine and Vegetable Pasta</h3>
+              <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+              </div>
+              <div class="card">
+              <img class="image" src="images/popsicle.jpg">
+          	<h3 class="name">All I Need Is a Popsicle</h3>
+              <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+              </div>
+              <div class="card">
+                 <img class="image" src="images/salmon.jpg">
+              	<h3 class="name">Salmon For Your Skin</h3>
+                  <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+              </div>
+              <div class="card">
+              <img class="image" src="images/sandwich.jpg">
+          	<h3 class="name">The Perfect Sandwich, A Real Classic</h3>
+              <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+              </div>
+              <div class="card">
+              <img class="image" src="images/croissant.jpg">
+          	<h3 class="name">Le French</h3>
+              <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+              </div>
+              <div class="next-img">
+              	
+              </div>
+          </div>
+          <hr>
+          <div class="about" id="about">
+          	<h3>About Me, The Food Man</h3>
+              <div class="about-img" >
+                     <img src="images/chef.jpg">
+              </div>
+              <h3>I am Who I Am!</h3>
+              <p>With Passion For Real, Good Food</p>
+              <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+          </div>
+          <hr>
+          <footer>
+          	<div class="footer">FOOTER</div>
+              <p class="footer-txt">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+              <div class="footer">BLOG POSTS</div>
+              <div class="small">
+              <img class="small-img" src="images/workshop.jpg">
+              <div class="footer-text">Lorem</div>
+              <div class="footer-text">Sed mattis nunc</div>
+              </div>
+              <div class="small">
+              <img class="small-img" src="images/gondol.jpg">
+              <div class="footer-text">Ipsum</div>
+              <div class="footer-text">Praes tinci sed</div>
+              </div>
+              <div class="footer">POPULAR TAGS</div>
+              <p>Travel   New York.  Dinner    Salmon     France      Drinks Ideas     Flavors Cuisine        Chicken       Dressing.     Fried.               Fish       Duck</p>
+          </footer>
+    </body>
+</html>
